@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:id="@+id/secondDeepest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" 
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:id="@+id/layoutOfEntireGameStatus"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layoutOfPlayer1Status"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutOfGameStatus"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutOfPlayer2Status"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutForCharacters"
+            android:layout_width="match_parent"
+            android:layout_height="300px" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/holo_orange_dark"
+                android:text="TextView" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutForButtons"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="&lt;-" />
+
+            <Button
+                android:id="@+id/buttonUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha=".5"
+                android:background="@android:color/holo_orange_dark"
+                android:text="up" />
+
+            <Button
+                android:id="@+id/buttonDown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="down" />
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="->" />
+
+            <Button
+                android:id="@+id/buttonPunch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="P" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Layout for game status. -->
+
+
+    <!-- Layout for where the characters are drawn. -->
+    <!-- Layout for the control buttons. -->
+
+</RelativeLayout>
